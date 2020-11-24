@@ -1,1 +1,1 @@
-web: gunicorn LoLAramPredictor.asgi:application -b 0.0.0.0:$PORT -w 3 -k uvicorn.workers.UvicornWorker
+web: gunicorn LoLAramPredictor.asgi:application -b 0.0.0.0:$PORT -w 2 -k uvicorn.workers.UvicornWorker
