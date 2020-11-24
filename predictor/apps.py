@@ -14,4 +14,4 @@ class PredictorConfig(AppConfig):
     model.load_model(name + '/' + filename)
     ssl.match_hostname = lambda cert, hostname: True
     # panth = pantheon.Pantheon(server, riotConfig['api_key'], errorHandling=True, debug=False)
-    panth = pantheon.Pantheon(server, os.getenv('RIOT_API_KEY'), errorHandling=True, debug=False)
+    panth = pantheon.Pantheon(server, os.environ['RIOT_API_KEY'], errorHandling=True, debug=False)
