@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker LoLAramPredictor.asgi:app
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker LoLAramPredictor.asgi:application eb: uvicorn src.main:app --host=0.0.0.0 --port=${PORT:-5000}
